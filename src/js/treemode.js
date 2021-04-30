@@ -1071,6 +1071,28 @@ treemode._createFrame = function () {
       })
     }
 
+    // crear botón de guardar
+    if (this.options && this.options.guardar) {
+      const guardar = document.createElement('button')
+      guardar.type = 'button'
+      guardar.style = 'background-image: none; width: 55px;'
+      guardar.title = 'Guardar'
+      guardar.innerText = 'Guardar'
+      guardar.className = 'jsoneditor-guardar'
+      guardar.id = this.options.guardar
+      guardar.value = 1
+      guardar.onclick = () => {
+        var data_pass = {
+          "raw": this.getText(),
+          "click": guardar.value
+        }
+        Shiny.setInputValue(this.options.guardar, data_pass);
+        ++guardar.value;
+      }
+      this.menu.appendChild(guardar)
+      this.dom.guardar = guardar
+    }
+
     // create search box
     if (this.options.search) {
       this.searchBox = new SearchBox(this, this.menu)
