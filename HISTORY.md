@@ -3,6 +3,25 @@
 https://github.com/josdejong/jsoneditor
 
 
+## 2021-06-30, version 9.5.1
+
+- Upgrade to `jsonrepair@2.2.1`.
+
+
+## 2021-06-05, version 9.5.0
+
+- Implemented new method `JSONEditor.validate(): Promise<ValidationError[]>`.
+  Thanks @ChrisAcrobat.
+
+
+## 2021-06-02, version 9.4.2
+
+- Fix #1311: exception being thrown under certain conditions when switching 
+  from `code` mode to `preview` mode.
+- Rename spin animation of `selectr` to prevent conflicts with tailwind, 
+  see #1333. Thanks @mdix.
+
+
 ## 2021-04-25, version 9.4.1
 
 - Improvements in the Korean translation. Thanks @luasenvy.
