@@ -1,6 +1,7 @@
 'use strict'
 
 import jsonrepair from 'jsonrepair'
+import perfectJson from 'perfect-json'
 import ace from './ace'
 import { DEFAULT_MODAL_ANCHOR } from './constants'
 import { ErrorTable } from './ErrorTable'
@@ -730,7 +731,7 @@ textmode.compact = function () {
  */
 textmode.format = function () {
   const json = this.get()
-  const text = JSON.stringify(json, null, this.indentation)
+  const text = perfectJson(json, this.options.stringifyOptions)
   this.updateText(text)
 }
 
@@ -774,7 +775,7 @@ textmode.resize = function () {
  * @param {*} json
  */
 textmode.set = function (json) {
-  this.setText(JSON.stringify(json, null, this.indentation))
+  this.setText(perfectJson(json, this.options.stringifyOptions))
 }
 
 /**
@@ -782,7 +783,7 @@ textmode.set = function (json) {
  * @param {*} json
  */
 textmode.update = function (json) {
-  this.updateText(JSON.stringify(json, null, this.indentation))
+  this.updateText(perfectJson(json, this.options.stringifyOptions))
 }
 
 /**
