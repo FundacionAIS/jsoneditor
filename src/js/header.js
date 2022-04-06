@@ -22,6 +22,7 @@
  * the License.
  *
  * Copyright (c) 2011-2021 Jos de Jong, http://jsoneditoronline.org
+ * Modifications copyright (C) 2021-2022 <MD&CO Consulting Group>
  *
  * @author  Jos de Jong, <wjosdejong@gmail.com>
  * @version @@version
