@@ -3,6 +3,64 @@
 https://github.com/josdejong/jsoneditor
 
 
+## 2022-03-15, version 9.7.4
+
+- Fix #1421: fix `onBlur` event not firing when focus goes to an `iframe`.
+
+
+## 2022-03-04, version 9.7.3
+
+- Fix #1422: fix `setSchema` not working.
+
+
+## 2022-02-09, version 9.7.2
+
+- Fix #1419: blurry text preview query on Chrome.
+
+
+## 2022-02-09, version 9.7.1
+
+- Fix #1419: blurry text preview on Chrome.
+
+
+## 2022-01-30, version 9.7.0
+
+- Implement #1413: show color indicator on readonly fields and in mode `view`.
+
+
+## 2022-01-13, version 9.6.0
+
+- Pass a new property `value` along with the `onNodeName` callback, see #1409. 
+  Thanks @brianpos.
+- Implement the `value` property of the callbacks `onNodeName`, `onEditable`, 
+  and `onClassName` for objects and arrays too (was `undefined` before). 
+  Since this can be a heavy recursive operation, the property is changed into 
+  a lazy getter.
+
+
+## 2021-12-29, version 9.5.11
+
+- Fix the font on Ubuntu for real by add the "ubuntu mono" font. See #1405. 
+
+
+## 2021-12-27, version 9.5.10
+
+- Fix the font on Ubuntu: add "dejavu sans mono". See #1405. 
+
+
+## 2021-12-22, version 9.5.9
+
+- More tweaking of the font because the 13px Cascadia Mono font on Windows gave
+  issues in Ace editor. Changed to 14px Consolas on Windows, 14px Menlo on Mac, 
+  see #1392, #1403.
+
+
+## 2021-12-19, version 9.5.8
+
+- Fix vertical centering of text and buttons, see #1392.
+- Improve font: 13px Cascadia Mono on Windows, 13px Monaco on Mac, see #1392.
+
+
 ## 2021-11-06, version 9.5.7
 
 - More robust polyfill for `Element.remove`, `window.CharacterData.remove`,

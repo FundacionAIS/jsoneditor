@@ -21,8 +21,8 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  *
- * Copyright (c) 2011-2021 Jos de Jong, http://jsoneditoronline.org
  * Modifications copyright (C) 2021-2022 <MD&CO Consulting Group>
+ * Copyright (c) 2011-2022 Jos de Jong, http://jsoneditoronline.org
  *
  * @author  Jos de Jong, <wjosdejong@gmail.com>
  * @version @@version
